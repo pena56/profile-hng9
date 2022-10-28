@@ -3,10 +3,11 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 64px 32px;
+  padding: 64px 16px;
 }
 
-.profile {
+.profile,
+.links {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,11 +22,15 @@ main {
 .socials {
   font-size: 20px;
   font-weight: 700;
-  color: #101828;
   text-align: center;
 }
 
 #slack {
   /* visibility: hidden; */
   display: none;
+}
+
+.links {
+  margin-top: 56px;
+  width: 100%;
 }
