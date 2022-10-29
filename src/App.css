@@ -4,6 +4,21 @@ main {
   flex-direction: column;
   align-items: center;
   padding: 64px 16px;
+  position: relative;
+}
+
+.share_btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px dashed #d0d5dd;
+  top: 44px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .profile,
@@ -33,4 +48,10 @@ main {
 .links {
   margin-top: 56px;
   width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .share_btn {
+    right: 352px;
+  }
 }

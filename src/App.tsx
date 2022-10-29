@@ -1,10 +1,17 @@
 import "./App.css";
 import profile_picture from "./assets/profile_img.svg";
+import share_icon_sm from "./assets/share-sm.svg";
+import share_icon_lg from "./assets/share-lg.svg";
 import Button from "./components/Button";
 
 function App() {
+  const share_icon = window.screen.width > 1200 ? share_icon_lg : share_icon_sm;
+
   return (
     <main>
+      <div className="share_btn">
+        <img src={share_icon} alt="share icon" />
+      </div>
       <section className="profile">
         <img src={profile_picture} alt="user profile" id="profile_img" />
 
