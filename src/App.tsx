@@ -19,6 +19,30 @@ function App() {
           id="btn_zuri"
           url="https://training.zuri.team/"
         />
+        <Button
+          label="Zuri Books"
+          id="books"
+          url="http://books.zuri.team"
+          subtext="Books on Design and coding."
+        />
+        <Button
+          label="Python Books"
+          id="book_python"
+          url="https://books.zuri.team/python-for-beginners?ref_id=pena56"
+          subtext="Best beginners guide for Python programming."
+        />
+        <Button
+          label="Background checks for coders"
+          id="pitch"
+          url="https://background.zuri.team"
+          subtext="Helping developers with background checks"
+        />
+        <Button
+          label="Design Books"
+          id="book_design"
+          url="https://books.zuri.team/design-rules"
+          subtext="Grab your copy of this free design book"
+        />
       </section>
     </main>
   );

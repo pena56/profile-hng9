@@ -4,11 +4,12 @@ interface ButtonProps {
   label: string;
   id: string;
   url: string;
+  subtext?: string;
 }
 
-export default function Button({ label, id, url }: ButtonProps) {
+export default function Button({ label, id, url, subtext }: ButtonProps) {
   return (
-    <a href={url} id={id} className="button">
+    <a href={url} id={id} className="button" title={subtext}>
       {label}
     </a>
   );
