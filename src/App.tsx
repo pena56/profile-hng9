@@ -1,5 +1,5 @@
 import "./App.css";
-import profile_picture from "./assets/profile_img.svg";
+import profile_picture from "./assets/profile_img.jpg";
 import share_icon_sm from "./assets/share-sm.svg";
 import share_icon_lg from "./assets/share-lg.svg";
 import github from "./assets/github.svg";
@@ -26,6 +26,11 @@ function App() {
           </div>
         </section>
         <section className="links">
+          <Button
+            label="Twitter Link"
+            id="btn_twitter"
+            url="https://twitter.com/pena_mo56"
+          />
           <Button
             label="Zuri Team"
             id="btn_zuri"

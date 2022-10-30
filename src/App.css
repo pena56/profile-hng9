@@ -33,6 +33,8 @@ main {
   width: 88px;
   height: 88px;
   margin-bottom: 24px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .socials {
@@ -125,7 +127,9 @@ footer > div > img {
     padding-left: 113px;
     padding-right: 113px;
   }
+}
 
+@media screen and (min-width: 500px) {
   footer > div {
     flex-direction: row;
     justify-content: space-between;
