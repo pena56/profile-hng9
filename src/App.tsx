@@ -9,61 +9,87 @@ import i4g from "./assets/I4G.svg";
 import Button from "./components/Button";
 
 function App() {
-  const share_icon = window.screen.width > 1200 ? share_icon_lg : share_icon_sm;
-
   return (
     <>
       <main>
-        <div className="share_btn">
-          <img src={share_icon} alt="share icon" />
-        </div>
+        <div className="share_btn"></div>
         <section className="profile">
           <img src={profile_picture} alt="user profile" id="profile_img" />
 
           <div className="socials">
-            <p id="twitter">pena_mo56</p>
-            <p id="slack">pena56</p>
+            <p>Moses Ogbopina</p>
+            <a
+              href="https://twitter.com/pena_mo56"
+              id="twitter"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              @ pena_mo56
+            </a>
+            <a
+              href="https://hng9.slack.com/pena56"
+              id="slack"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              pena56
+            </a>
           </div>
         </section>
         <section className="links">
           <Button
-            label="Twitter Link"
-            id="btn_twitter"
-            url="https://twitter.com/pena_mo56"
+            label="Moses Ogbopina"
+            id="btn_portfolio"
+            url="https://pena56.com"
+            subtext="Latest version of my Portfolio website"
           />
           <Button
-            label="Zuri Team"
-            id="btn_zuri"
+            label="Zuri Family"
+            id="btn__zuri"
             url="https://training.zuri.team/"
+            subtext="Welcome to the Zuri family"
           />
           <Button
-            label="Zuri Books"
+            label="Zuri's Library"
             id="books"
             url="http://books.zuri.team"
-            subtext="Books on Design and coding."
+            subtext="You'll find all tech books here to help you get started in your tech journey."
           />
           <Button
-            label="Python Books"
-            id="book_python"
+            label="Python book for beginners"
+            id="book__python"
             url="https://books.zuri.team/python-for-beginners?ref_id=pena56"
-            subtext="Best beginners guide for Python programming."
+            subtext="Grab a copy of this comprehensive python book for beginners."
           />
           <Button
-            label="Background checks for coders"
+            label="Talent Hunt"
             id="pitch"
             url="https://background.zuri.team"
-            subtext="Helping developers with background checks"
+            subtext="Test your tech skills and watch awesome developers do awesome things."
           />
           <Button
-            label="Design Books"
-            id="book_design"
+            label="UI/UX Design Book"
+            id="book__design"
             url="https://books.zuri.team/design-rules"
-            subtext="Grab your copy of this free design book"
+            subtext="Grab your copy of the best design book on UI/UX"
           />
         </section>
         <section className="social_icons">
-          <img src={slack} alt="slack" />
-          <img src={github} alt="github" />
+          <a
+            href="https://hng9.slack.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img src={slack} alt="slack" />
+          </a>
+
+          <a
+            href="https://github.com/pena56"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img src={github} alt="github" />
+          </a>
         </section>
       </main>
       <footer>

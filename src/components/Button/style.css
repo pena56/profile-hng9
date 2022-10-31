@@ -15,8 +15,28 @@
   line-height: 20px;
   font-weight: 500;
   transition: background 0.2s ease-in-out;
+  position: relative;
+}
+
+.btn_share-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #d0d5dd;
+  position: absolute;
+  right: 20px;
+  background: #f2f4f7;
+  background-image: url("../../assets/share-lg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: difference;
+  display: none;
 }
 
 .button:hover {
   background: #d0d5dd;
+}
+
+.button:hover > .btn_share-icon {
+  display: block;
 }

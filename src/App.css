@@ -20,6 +20,9 @@ main {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  background-image: url("./assets/share-sm.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .profile,
@@ -35,6 +38,7 @@ main {
   margin-bottom: 24px;
   border-radius: 50%;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .socials {
@@ -59,17 +63,18 @@ main {
   align-items: center;
   justify-content: center;
   margin-bottom: 32px;
+  gap: 24px;
 }
 
-.social_icons > img {
+.social_icons img {
   width: 24px;
   height: 24px;
   object-fit: contain;
 }
 
-.social_icons > img:first-child {
+/* .social_icons img:first-child {
   margin-right: 24px;
-}
+} */
 
 footer {
   padding: 24px 16px;
@@ -116,9 +121,6 @@ footer > div > img {
 }
 
 @media screen and (min-width: 1200px) {
-  .share_btn {
-    right: 352px;
-  }
   .social_icons {
     margin-bottom: 64px;
   }
@@ -126,6 +128,13 @@ footer > div > img {
   footer {
     padding-left: 113px;
     padding-right: 113px;
+  }
+}
+
+@media screen and (min-width: 570px) {
+  .share_btn {
+    right: 20%;
+    background-image: url("./assets/share-lg.svg");
   }
 }
 
