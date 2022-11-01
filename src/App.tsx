@@ -14,7 +14,7 @@ function App() {
       <main>
         <div className="share_btn"></div>
         <section className="profile">
-          <img src={profile_picture} alt="user profile" id="profile_img" />
+          <img src={profile_picture} alt="user profile" id="profile__img" />
 
           <div className="socials">
             <p>Moses Ogbopina</p>
